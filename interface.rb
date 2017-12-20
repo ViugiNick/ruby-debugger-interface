@@ -63,19 +63,19 @@ class DebuggerAgent
     #breakpoint hook
   end
 
-  def catchExceptions(exception_class_name: String)
+  def catch_exceptions(exception_class_name: String)
     #...
   end
 
-  def registerBreakpoint(breakpoint_t)
+  def register_breakpoint(breakpoint_t)
     #...
   end
 
-  def enableBreakpoint(id)
+  def enable_breakpoint(id)
     #...
   end
 
-  def disableBreakpoint(id)
+  def disable_breakpoint(id)
     #...
   end
 
@@ -90,4 +90,16 @@ class DebuggerAgent
   def do_step_over
 
   end
+
+  def do_continue
+
+  end
+
+  def do_pause
+
+  end
+
+  #Actions for obtaining variables and evaluating expressions quite easy to implement
+  #
+  #
 end
