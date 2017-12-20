@@ -31,6 +31,15 @@
 #   char *last_file;
 #   int last_line;
 # } debug_context_t;
+#
+# typedef struct debug_frame_t
+# {
+#     struct debug_frame_t *prev;
+#     const char *file;
+#     int line;
+#     VALUE binding;
+#     VALUE self;
+# } debug_frame_t;
 
 class Frame
   def initialize(location)
@@ -96,6 +105,10 @@ class DebuggerAgent
   end
 
   def do_pause
+
+  end
+
+  def pop_frame(debug_frame_t)
 
   end
 
